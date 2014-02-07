@@ -45,7 +45,7 @@ Now you can access to `$app['chromephp']` object and call it's methods.
 $app->get('/myroute', function() use ($app) {
     try
     {
-        $app['chromephp']->info('Let's render the view!'); 
+        $app['chromephp']->info('Let\'s render the view!'); 
         return $app['twig']->render('mytemplate.html.twig');
     }
     catch(Exception $e)
