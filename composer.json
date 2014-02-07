@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "blackmesa\\silex-chromephp": "src"
+            "silex-chromephp": "src"
         }
     },
     "minimum-stability": "dev"
