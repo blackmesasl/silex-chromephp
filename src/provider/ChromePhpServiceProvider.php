@@ -1,10 +1,10 @@
 <?php
 
-namespace Blackmesa\Provider;
+namespace Blackmesa\SilexChromePhp\Provider;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
-use Blackmesa\ChromePhp;
+use Blackmesa\SilexChromePhp\ChromePhp;
 
 /**
  * ChromePhpServiceProvider

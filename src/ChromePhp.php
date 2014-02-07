@@ -1,6 +1,6 @@
 <?php
 
-namespace Blackmesa;
+namespace Blackmesa\SilexChromePhp;
 
 use ChromePhp as ChromePhpBase;
 
