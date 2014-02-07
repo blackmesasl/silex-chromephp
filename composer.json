@@ -1,7 +1,7 @@
 {
     "name": "blackmesasl/silex-chromephp",
     "description": "Silex package to implement ChromePHP as ServiceProvider",
-    "keywords": ["siles", "chromephp","serviceprovider"],
+    "keywords": ["silex","chromephp","serviceprovider"],
     "homepage": "http://github.com/blackmesasl/silex-chromephp",
     "type": "library",
     "license": "MIT",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Blackmesa\\SilexChromePhp\\": "src\\"
+            "Blackmesa\\SilexChromePhp": "src"
         }
     },
     "minimum-stability": "dev"
