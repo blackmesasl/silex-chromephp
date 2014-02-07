@@ -5,9 +5,9 @@ namespace Blackmesa\SilexChromePhp;
 use ChromePhp as ChromePhpBase;
 
 /**
- * Facebook
+ * ChromePhp
  *
- * @author Damien Pitard <damien.pitard@gmail.com>
+ * @author Blackmesa <info@blackmesa.es>
  */
 class ChromePhp
 {
