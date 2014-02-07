@@ -12,6 +12,7 @@ The ChromePhpServiceProvider easily integrate ChromePhp into Silex Micro Framewo
 Add `blackmesasl/silex-chromephp` to your dependencies.
 
 Via command line:
+
 `php composer.phar require "blackmesasl/silex-chromephp":"dev-master"`
 
 or adding the following line to your `composer.json` file:
@@ -37,5 +38,7 @@ $app->register(new ChromePhpServiceProvider());
 ##See also
 
 Silex Micro Framework -> http://silex.sensiolabs.org
-Chrome Logger extension -> http://www.chromelogger.com/
+
+Chrome Logger extension -> http://www.chromelogger.com
+
 ChromePHP -> https://github.com/ccampbell/chromephp
