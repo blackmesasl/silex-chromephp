@@ -1,5 +1,4 @@
-SilexChromePhp
-===============
+#SilexChromePhp
 
 [![Latest Stable Version](https://poser.pugx.org/blackmesasl/silex-chromephp/v/stable.png)](https://packagist.org/packages/blackmesasl/silex-chromephp) [![Total Downloads](https://poser.pugx.org/blackmesasl/silex-chromephp/downloads.png)](https://packagist.org/packages/blackmesasl/silex-chromephp) [![Latest Unstable Version](https://poser.pugx.org/blackmesasl/silex-chromephp/v/unstable.png)](https://packagist.org/packages/blackmesasl/silex-chromephp) [![License](https://poser.pugx.org/blackmesasl/silex-chromephp/license.png)](https://packagist.org/packages/blackmesasl/silex-chromephp)
 
@@ -30,8 +29,32 @@ use Blackmesa\SilexChromePhp\Provider\ChromePhpServiceProvider;
 
 $app->register(new ChromePhpServiceProvider());
 ```
+Now you can access to `$app['chromephp']` object and call it's methods.
 
-[LOGGING METHODS]
+###Valid methods
+- `info`
+- `warn`
+- `error`
+- `log`
+- `table`
+- `group`
+- `groupCollapsed`
+- `groupEnd`
+
+```php
+$app->get('/myroute', function() use ($app) {
+    try
+    {
+        $app['chromephp']->info('Let's render the view!'); 
+        return $app['twig']->render('mytemplate.html.twig');
+    }
+    catch(Exception $e)
+    {
+        $app['chromephp']->error($e);
+        throw $e;
+    }
+    $app['chromephp']->warn('This is impossible!!!');
+});
 
 [ENABLED ONLY WHEN DEBUG]
 
