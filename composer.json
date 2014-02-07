@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Blackmesa\\SilexChromePhp\\": "src\"
+            "Blackmesa\\SilexChromePhp\\": "src\\"
         }
     },
     "minimum-stability": "dev"
