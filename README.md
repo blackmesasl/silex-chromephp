@@ -55,6 +55,7 @@ $app->get('/myroute', function() use ($app) {
     }
     $app['chromephp']->warn('This is impossible!!!');
 });
+```
 
 [ENABLED ONLY WHEN DEBUG]
 
