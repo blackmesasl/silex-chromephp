@@ -26,7 +26,7 @@ and running `php composer.phar update`
 
 To be able to see the debug messages you send from your server side code you need to install the Chrome Logger Extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/chromephp/noaneddfkdjfnfdakjjmocngnfkfehhd).
 
-Once you have the service provider on you Silex project and the extension installed on your Chrome Browser just enable the extension and start getting your debugging information on the _console_ panel of the Developer Tools.
+Once you have the service provider on you Silex project and the extension installed on your Chrome Browser just enable the extension to start getting your debugging information on the _console_ panel of the Developer Tools.
 
 For more information take a look of [Chrome Logger website](http://www.chromelogger.com).
 
