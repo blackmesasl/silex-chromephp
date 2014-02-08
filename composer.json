@@ -5,7 +5,6 @@
     "homepage": "http://github.com/blackmesasl/silex-chromephp",
     "type": "library",
     "license": "MIT",
-    "version": "dev",
     "authors": [
         {
             "name": "Blackmesa",
@@ -23,6 +22,5 @@
         "psr-0": {
             "Blackmesa\\SilexChromePhp": "src"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
