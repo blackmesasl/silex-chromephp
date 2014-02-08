@@ -8,6 +8,8 @@ The ChromePhpServiceProvider easily integrate ChromePhp into Silex Micro Framewo
 
 ##Installation
 
+###SilexChromePhp and ChromePhp
+
 Add `blackmesasl/silex-chromephp` to your dependencies.
 
 Via command line:
@@ -18,7 +20,15 @@ or adding the following line to your `composer.json` file:
  
 `"blackmesasl/silex-chromephp": "dev-master"`
 
-[REFERENCE TO CHROME EXTENSION]
+and running `php composer.phar update`
+
+###Chrome Logger Extension
+
+To be able to see the debug messages you send from your server side code you need to install the Chrome Logger Extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/chromephp/noaneddfkdjfnfdakjjmocngnfkfehhd).
+
+Once you have the service provider on you Silex project and the extension installed on your Chrome Browser just enable the extension and start getting your debugging information on the _console_ panel of the Developer Tools.
+
+For more information take a look of [Chrome Logger website](http://www.chromelogger.com).
 
 ##Usage
 
@@ -31,7 +41,7 @@ $app->register(new ChromePhpServiceProvider());
 ```
 Now you can access to `$app['chromephp']` object and call it's methods.
 
-###Valid methods
+###Available methods
 - `info`
 - `warn`
 - `error`
@@ -57,12 +67,10 @@ $app->get('/myroute', function() use ($app) {
 });
 ```
 
-[ENABLED ONLY WHEN DEBUG]
+The ChromePhpServiceProvder make use of `$app['debug']` flag to decide whether or not to send de info to the browser.
 
 ##See also
 
-Silex Micro Framework -> http://silex.sensiolabs.org
-
-Chrome Logger extension -> http://www.chromelogger.com
-
-ChromePHP -> https://github.com/ccampbell/chromephp
+- [Silex Micro Framework](http://silex.sensiolabs.org)
+- [Chrome Logger extension](http://www.chromelogger.com)
+- [ChromePHP](https://github.com/ccampbell/chromephp)
